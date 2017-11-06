@@ -1,0 +1,10 @@
+{
+  "name": "splashscreen",
+  "version": "1.0.0",
+  "description": "Discrete New York Temporary Splash Screen",
+  "main": "index.js",
+  "repository": "https://github.com/discretenewyork/splashscreen",
+  "author": "Elias Martinez Cohen <eliasmartinezcohen@gmail.com>",
+  "license": "Apache 2.0",
+  "private": false
+}
