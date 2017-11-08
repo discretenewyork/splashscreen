@@ -26,7 +26,7 @@ export default class Countdown extends Component {
   }
 
   componentDidMount() {
-    this.interval = window.setInterval(this.tick, 32)
+    this.interval = window.setInterval(this.tick, 31)
   }
 
   componentWillUnmount() {
