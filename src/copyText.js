@@ -15,13 +15,8 @@ export const interns = [
 
 export const about = [
   <p key='about1'>
-    Discrete New York is a private, independent collective founded by an
-    orthogonal group of individuals from creative, financial, technological,
-    and luxury backgrounds.
-  </p>,
-  <p key='about2'>
-    Headquartered in Manhattan with a deep heritage in luxury vehicles,
-    Discrete fosters efficient, strategic connections between members to
-    capitalize on corollary innovations in the global market.
+    Discrete New York is a private collective whose goal is to foster
+    efficient, strategic connections between members and capitalize on
+    corollary innovations in the global market.
   </p>
 ]
