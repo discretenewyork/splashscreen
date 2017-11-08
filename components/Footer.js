@@ -44,7 +44,7 @@ const RightMenu = styled.ul`
 const Footer = () => (
   <Wrap>
     <RightMenu>
-      <a href='mailto:team@discretenewyork.com'>
+      <a href='mailto:info@discretenewyork.com'>
         <li>contact</li>
       </a>
       <a href='#interns'>

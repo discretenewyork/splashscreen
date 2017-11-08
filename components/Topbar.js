@@ -23,8 +23,8 @@ const Wrap = styled.header`
 
 const Topbar = () => (
   <Wrap>
-    <ComingSoon/>
-    <Countdown/>
+    <ComingSoon />
+    <Countdown />
   </Wrap>
 )
 

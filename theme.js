@@ -1,6 +1,9 @@
-const theme =  {
+const fallbackSerif =
+  '-apple-system, system-ui, BlinkMacSystemFont, Helvetica, sans-serif'
+
+const theme = {
   font: {
-    serif: '"Yantramanav", -apple-system, system-ui, BlinkMacSystemFont, Helvetica, sans-serif;',
+    serif: `"Yantramanav", ${fallbackSerif};`,
     mono: '"Roboto Mono", "SF Mono", "Monaco", monospace;'
   },
   color: {

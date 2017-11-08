@@ -5,6 +5,7 @@ import Topbar from './Topbar'
 import Masthead from './Masthead'
 import Footer from './Footer'
 
+// eslint-disable-next-line
 injectGlobal`${globalStyles}`
 
 const Wrap = styled.div`
@@ -18,9 +19,9 @@ const Wrap = styled.div`
 const App = () => (
   <ThemeProvider theme={theme}>
     <Wrap>
-      <Topbar/>
-      <Masthead/>
-      <Footer/>
+      <Topbar />
+      <Masthead />
+      <Footer />
     </Wrap>
   </ThemeProvider>
 )

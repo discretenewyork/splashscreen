@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 const Dot = styled.span`
   font-family: 'sans-serif';
+  font-size: 1.2em;
   font-weight: 800;
   color: ${({ theme }) => theme.color.red};
   margin-right: 0.3em;
@@ -44,7 +45,7 @@ export default class ComingSoon extends Component {
         <Dot style={{ visibility: this.state.recDot ? 'visible' : 'hidden' }}>
           {'•'}
         </Dot>
-        Coming soon
+        Under development
       </Wrap>
     )
   }
