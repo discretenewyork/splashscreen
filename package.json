@@ -10,6 +10,7 @@
   "scripts": {
     "build": "yarn clean && NODE_ENV=production node ./script/build-prod",
     "clean": "rm -rf dist/",
+    "deploy": "yarn build && aws s3 sync ./dist s3://discretenewyork.com",
     "dev": "steal-tools --watch"
   },
   "devDependencies": {

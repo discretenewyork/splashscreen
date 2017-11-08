@@ -20,8 +20,8 @@ stealTools.optimize({ config }, {
   target: 'web',
   envify: true
 }).then(() => {
-  fs.copyFileSync(prodHtml, destHtml)
-  fs.copyFileSync(favicon, favDest)
+  fs.copyFileSync(index.src, index.dest)
+  fs.copyFileSync(favicon.src, favicon.dest)
 }, e => {
   console.log('ERROR', e)
 })
