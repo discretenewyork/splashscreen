@@ -8,10 +8,12 @@
   "license": "Apache-2.0",
   "private": false,
   "scripts": {
-    "build": "yarn clean && NODE_ENV=production node ./script/build-prod",
+    "build": "yarn clean && NODE_ENV=production node ./script/build",
     "clean": "rm -rf dist/",
     "deploy": "yarn build && aws s3 sync ./dist s3://discretenewyork.com",
-    "dev": "steal-tools --watch"
+    "dev": "serve .",
+    "lint": "eslint",
+    "start": "serve ./dist"
   },
   "devDependencies": {
     "babel-eslint": "^8.0.2",
@@ -21,8 +23,9 @@
     "eslint-plugin-react": "^7.4.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
+    "serve": "^6.4.1",
     "steal": "^1.5.15",
-    "steal-jsx": "^0.0.2",
+    "steal-react-jsx": "^0.0.3",
     "steal-tools": "^1.9.1",
     "styled-components": "^2.2.3"
   },
@@ -32,7 +35,7 @@
       "blacklist": []
     },
     "plugins": [
-      "steal-jsx"
+      "steal-react-jsx"
     ]
   },
   "eslintConfig": {
