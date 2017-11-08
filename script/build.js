@@ -8,7 +8,7 @@ const distDir = path.join(rootDir, 'dist')
 const config = path.join(rootDir, 'package.json!npm')
 
 const index = {
-  src: path.join(srcDir, 'index.prod.html')
+  src: path.join(srcDir, 'index.prod.html'),
   dest: path.join(distDir, 'index.html')
 }
 const favicon = {
@@ -22,8 +22,10 @@ stealTools.optimize({ config }, {
   envify: true,
   minify: true
 }).then(() => {
-  fs.copyFile(index.src, index.dest)
-  fs.copyFile(favicon.src, favicon.dest)
+  console.log('Copy index.html...')
+  fs.copyFileSync(index.src, index.dest)
+  console.log('Copy favicon.png...')
+  fs.copyFileSync(favicon.src, favicon.dest)
 }, e => {
   console.log('ERROR:', e)
 })

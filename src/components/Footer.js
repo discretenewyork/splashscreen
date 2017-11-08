@@ -40,6 +40,7 @@ const Menu = styled.ul`
     display: block;
     letter-spacing: 0.5px;
     text-transform: lowercase;
+    background: white;
   }
 `
 

@@ -4,6 +4,9 @@ import styled from 'styled-components'
 const SelectedText = styled.input`
   border: 1px solid ${props => props.theme.color.text};
   border-radius: 0;
+  background: white;
+  box-shadow: none;
+  z-index: 99;
   outline: none;
   margin: 0;
   padding: 0.25em 0.5em;
@@ -49,9 +52,11 @@ export default class ContactButton extends Component {
   }
 
   render() {
+    const show = this.state.emailShown
     return (
-      <li>
-        {this.state.emailShown ? (
+      <li
+        style={{ background: show ? 'white' : 'none' }}>
+        {show ? (
           <SelectedText
             defaultValue={`${this.a}@${this.b}.${this.c}`}
             innerRef={ref => { this.input = ref }}
