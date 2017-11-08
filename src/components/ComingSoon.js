@@ -13,7 +13,6 @@ const Wrap = styled.span`
   font-family: ${({ theme }) => theme.font.serif};
   font-weight: 800;
   display: flex;
-  flex-direction: row-reverse;
   margin-left: 3.5vh;
   text-transform: uppercase;
 `

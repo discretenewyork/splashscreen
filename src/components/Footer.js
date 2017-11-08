@@ -1,7 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
+import ContactButton from './ContactButton'
 
 const Wrap = styled.footer`
+  display: flex;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -10,14 +13,13 @@ const Wrap = styled.footer`
   padding: 0 1em;
 `
 
-const RightMenu = styled.ul`
+const Menu = styled.ul`
+  display: flex;
+  flex: 1 1 auto;
   padding: 0;
   margin: 0;
-  width: 32%;
+  width: 50%;
   height: 100%;
-  top: 0;
-  right: 0;
-  display: flex;
   list-style: none;
 
   a {
@@ -43,14 +45,17 @@ const RightMenu = styled.ul`
 
 const Footer = () => (
   <Wrap>
-    <RightMenu>
-      <a href='mailto:info@discretenewyork.com'>
-        <li>contact</li>
-      </a>
-      <a href='#interns'>
+    <Menu>
+      <ContactButton />
+    </Menu>
+    <Menu style={{ flexDirection: 'row-reverse' }}>
+      <Link to='/internships'>
         <li>internships</li>
-      </a>
-    </RightMenu>
+      </Link>
+      <Link to='/about'>
+        <li>about</li>
+      </Link>
+    </Menu>
   </Wrap>
 )
 

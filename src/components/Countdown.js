@@ -4,7 +4,6 @@ import styled from 'styled-components'
 const Wrap = styled.span`
   font-family: ${({ theme }) => theme.font.mono};
   display: flex;
-  flex-direction: row-reverse;
   font-size: 0.75em;
 `
 

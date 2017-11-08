@@ -16,7 +16,6 @@ const Wrap = styled.header`
   font-size: 0.85em;
 
   display: flex;
-  flex-direction: row-reverse;
   align-items: left;
   justify-content: space-between;
 `

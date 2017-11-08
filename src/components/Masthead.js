@@ -1,10 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 const fsize = 4.2
 
 const Wrap = styled.div`
-  position: absolute;
+  position: fixed;
   top: 0;
   left: -${fsize * 4}vh;
   height: 100%;
@@ -12,6 +13,10 @@ const Wrap = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: left;
+  a {
+    color: ${props => props.theme.color.text};
+    text-decoration: none;
+  }
 `
 const Vertical = styled.h1`
   white-space: nowrap;
@@ -24,9 +29,11 @@ const Vertical = styled.h1`
 
 const Masthead = () => (
   <Wrap>
-    <Vertical>
-      DISCRETE NEW YORK
-    </Vertical>
+    <Link to='/'>
+      <Vertical>
+        DISCRETE NEW YORK
+      </Vertical>
+    </Link>
   </Wrap>
 )
 
