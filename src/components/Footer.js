@@ -36,6 +36,13 @@ const Menu = styled.ul`
     padding: 0;
     margin: 0 1.5em;
     font-size: 0.8em;
+    @media (max-width: 600px) {
+      font-size: 0.68em;
+      margin: 0 0.8em;
+    }
+    @media (min-width: 1000px) {
+      margin: 0 5em;
+    }
     line-height: 3em;
     display: block;
     letter-spacing: 0.5px;
