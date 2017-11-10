@@ -15,7 +15,7 @@ export const interns = [
 
 export const about = [
   <p key='about1'>
-    Discrete New York is a private collective whose goal is to foster
+    Discrete New York is a private, interdisciplinary collective whose goal is to foster
     efficient, strategic connections between members and capitalize on
     corollary innovations in the global market.
   </p>
